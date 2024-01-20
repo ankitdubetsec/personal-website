@@ -1,0 +1,74 @@
+.contacts{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 5rem;
+      /* scroll */
+  padding-top: 3rem;
+}
+.lcontacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 70vh; */
+    position: relative;
+}
+.lcontacts>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.lcontacts>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.rcontacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   flex: 1;
+    position: relative;
+    padding-left: 4rem;
+}
+.contform{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    /* height: 70vh; */
+   
+    
+}
+.user{
+    width: 20rem;
+    height: 2rem;
+    border: 2px solid var(--orange);
+    padding: 0.3rem;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+form>:nth-child(3){
+    height: 4rem!important;
+}
+
+@media screen and (max-width: 480px) {
+    .contacts{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+        align-items: center;
+    }
+    .rcontacts{
+        padding-left: 0;
+    }
+    .user{
+       width: 15rem;
+      /* padding-left: 0%;
+      left: -4rem; */
+    }
+
+}
